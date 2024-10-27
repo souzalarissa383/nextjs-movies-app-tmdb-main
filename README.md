@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movie App
 
-## Getting Started
+Um aplicativo web que permite aos usuários pesquisar e visualizar detalhes de filmes usando a API do TMDB.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework React para construção de aplicativos web.
+- **React**: Biblioteca para construção de interfaces de usuário.
+- **SASS**: Pré-processador CSS para estilos mais eficientes e organizados.
+- **Axios**: Cliente HTTP para fazer requisições à API.
+- **React Icons**: Conjunto de ícones para melhorar a interface do usuário.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Busca de filmes por título.
+- Exibição de uma lista paginada de filmes.
+- Exibição de detalhes dos filmes selecionados.
+- Troca de temas (claro e escuro).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Instalação
 
-## Learn More
+Para instalar as dependências do projeto, siga os passos abaixo:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/souzalarissa383/nextjs-movies-app-tmdb-main.git
+2. Navegue até o diretório do projeto:
+   cd nextjs-movies-app-tmdb-main
+3.Instale as dependências usando npm ou yarn:
+- npm install
+- yarn install
+4.Executando o Projeto
+- npm run dev
+- yarn dev
+     
+O aplicativo estará disponível em http://localhost:3000.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
