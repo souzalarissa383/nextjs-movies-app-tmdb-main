@@ -1,6 +1,6 @@
 .loading-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 90px);
+    display: flex; /* Utiliza o modelo flexbox para organizar os elementos internos. */
+    align-items: center; /* Alinha os itens verticalmente no centro do contêiner. */
+    justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner. */
+    min-height: calc(100vh - 90px); /* Define a altura mínima do contêiner como a altura total da viewport (100% da altura da tela) menos 90 pixels. */
 }

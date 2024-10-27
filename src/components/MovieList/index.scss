@@ -1,35 +1,30 @@
 .movie-container {
-    padding: 24px 3%;
-    
-    .sub-header {
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-        margin-bottom: 24px;
+    padding: 24px 3%; // Adiciona um espaçamento interno (padding) de 24px em cima e embaixo, e 3% nas laterais.
 
+    .sub-header {
+        display: flex; // Utiliza flexbox para organizar os elementos em linha.
+        align-items: center; // Alinha os itens no centro verticalmente.
+        justify-content: center; // Centraliza os itens horizontalmente.
+        color: #fff; // Define a cor do texto como branca.
+        margin-bottom: 24px; // Adiciona um espaçamento inferior de 24px.
     }
     
     .movie-list {
-        border: 4px solid transparent; /* Borda transparente */
-        padding: 16px; /* Padding de 16px */
-        border-radius: 4px; 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr); /* 5 colunas por padrão */
-        gap: 16px;
-        list-style: none;
-        width: 100%;
-        background-color: rgba(235, 234, 248, 0.08); /* Fundo com 8% de opacidade */
-        backdrop-filter: blur(4px); /* Efeito de desfoque */
+        border: 4px solid transparent; // Define uma borda transparente de 4px ao redor da lista.
+        padding: 16px; // Adiciona um padding de 16px ao redor da lista.
+        border-radius: 4px; // Arredonda os cantos da lista.
+        display: grid; // Usa o grid layout para organizar os filmes.
+        grid-template-columns: repeat(5, 1fr); // Cria 5 colunas de largura igual por padrão.
+        gap: 16px; // Define um espaço de 16px entre os itens do grid.
+        list-style: none; // Remove o estilo padrão da lista.
+        width: 100%; // Define a largura da lista como 100% do contêiner pai.
+        background-color: rgba(235, 234, 248, 0.08); // Define um fundo com 8% de opacidade.
+        backdrop-filter: blur(4px); // Aplica um efeito de desfoque ao fundo da lista.
     }
     
-    @media (max-width: 768px) { /* Ajuste o tamanho conforme necessário */
+    @media (max-width: 768px) { // Aplica estilos para telas com largura máxima de 768px.
         .movie-list {
-            grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+            grid-template-columns: repeat(2, 1fr); // Muda para 2 colunas em telas menores.
         }
     }
-    
-
-    
 }

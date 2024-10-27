@@ -1,42 +1,99 @@
 .movie-description-container {
-    width: 1448px;
-    height: 603px;
-    gap: 0px;
-    opacity: 0px;
-    
+    padding: 24px 3%; // Adiciona espaçamento interno (padding) de 24px nas direções vertical e 3% nas laterais.
 
     .movie-header {
-        display: flex;
-        margin-bottom: 20px;
-       // Width:354.51px;
-      //  Height:542px;
+        display: flex; // Usa flexbox para organizar os elementos em linha.
+        padding: 16px; // Adiciona espaçamento interno de 16px.
+        border: 4px solid transparent; // Define uma borda transparente de 4px.
+        margin-bottom: 20px; // Espaçamento inferior de 20px.
+        color: #EEEEF0; // Define a cor do texto.
+        gap: 16px; // Espaçamento de 16px entre os elementos filhos.
+        border-radius: 4px; // Arredonda os cantos do contêiner.
+        background-color: rgba(235, 234, 248, 0.08); // Cor de fundo com transparência.
+        font-size: 16px; // Define o tamanho da fonte.
+        backdrop-filter: blur(4px); // Aplica um efeito de desfoque ao fundo.
 
         .movie-poster {
-            max-width: 200px;
-            border-radius: 8px;
-            margin-right: 20px;
+            width: 354.51px; // Largura fixa para o pôster do filme.
+            height: 542px; // Altura fixa para o pôster do filme.
+            border-radius: 8px; // Arredonda os cantos do pôster.
+            margin-right: 20px; // Espaçamento à direita do pôster.
+            object-fit: cover; // Garante que a imagem preencha o espaço sem distorcer.
         }
 
         .movie-info {
-            flex: 1;
+            flex: 1; // Permite que este contêiner ocupe o espaço restante.
 
             .movie-title {
-                font-size: 1.5rem;
-                margin-bottom: 10px;
+                font-size: 1.5rem; // Tamanho da fonte para o título do filme.
+                margin-bottom: 10px; // Espaçamento inferior de 10px.
+            }
+
+            .movie-rating {
+                font-size: 1rem; // Tamanho da fonte para a avaliação do filme.
+                margin-bottom: 10px; // Espaçamento inferior de 10px.
+            }
+
+            .synopsis-label {
+                margin-top: 10px; // Espaçamento superior de 10px.
             }
 
             .movie-overview {
-                font-size: 1rem;
-                color: #666;
+                width: 100%; // Largura total do contêiner.
+                height: auto; // Altura automática para se ajustar ao conteúdo.
+                font-size: 16px; // Tamanho da fonte para a sinopse.
+                color: #EEEEF0; // Cor do texto da sinopse.
+                overflow-wrap: break-word; // Quebra a palavra se não couber no espaço.
+                //padding: 0 8px; // Comentado: espaço interno opcional nas laterais.
             }
         }
     }
 
     .movie-details {
-        margin-bottom: 20px;
-
+        margin-bottom: 20px; // Espaçamento inferior de 20px.
+        color: #FFFFFF; // Define a cor do texto para detalhes do filme.
+        
         p {
-            margin: 5px 0;
+            margin: 5px 0; // Espaçamento vertical de 5px para parágrafos.
+        }
+
+        .movie-trailer {
+            margin-top: 20px; // Espaçamento superior de 20px para a seção de trailer.
+            
+            h3 {
+                font-size: 1.2rem; // Tamanho da fonte para o título do trailer.
+                margin-bottom: 10px; // Espaçamento inferior de 10px.
+            }
+
+            .youtube-video { // Nova classe adicionada para estilizar o iframe do trailer.
+                border-radius: 4px; // Arredonda os cantos do iframe.
+                overflow: hidden; // Oculta qualquer conteúdo que ultrapasse os limites do contêiner.
+                width: 100%; // Largura total do contêiner.
+                height: auto; // Altura automática para se ajustar ao conteúdo.
+                transition: opacity 0.3s ease-in-out; // Transição suave para a opacidade.
+                opacity: 0; // Começa com opacidade 0 (invisível).
+                
+                &.loaded { // Estilo adicional quando a classe "loaded" é aplicada.
+                    opacity: 1; // Torna o iframe visível.
+                }
+            }
+        }
+    }
+
+    // Estilos para a versão mobile
+    @media (max-width: 768px) { // Aplica estilos para telas com largura máxima de 768px.
+        .movie-header {
+            flex-direction: column; // Muda a direção do flexbox para coluna.
+
+            .movie-poster {
+                margin: 0; // Remove margem ao pôster.
+                width: 100%; // Define a largura do pôster como 100%.
+                height: auto; // Altura automática para se ajustar ao conteúdo.
+            }
+
+            .movie-info {
+                padding-top: 16px; // Adiciona espaço superior ao contêiner de informações do filme.
+            }
         }
     }
 }

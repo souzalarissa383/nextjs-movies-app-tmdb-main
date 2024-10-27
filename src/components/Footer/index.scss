@@ -1,26 +1,27 @@
 .footer {
-    width: 1410px; /* Largura fixa */
-    height: 68px; /* Altura fixa */
-    padding: 24px 0 0 0; /* Padding */
-    border-top: 1px solid transparent; /* Borda superior */
-    opacity: 1; /* Opacidade 1 para ser visível */
-    display: flex;
-    justify-content: center; /* Centraliza o conteúdo */
-    align-items: center; /* Alinha verticalmente o conteúdo */
-    gap: 0; /* Espaçamento entre itens */
-    border-top: 1px solid #F1E6FD30; /* Borda superior com a cor especificada */
+    width: 1410px; /* Define a largura do footer para 1410 pixels. */
+    height: 68px; /* Define a altura do footer para 68 pixels. */
+    padding: 24px 0 0 0; /* Aplica um preenchimento de 24 pixels na parte superior, e nenhum preenchimento nas laterais e na parte inferior. */
+    border-top: 1px solid transparent; /* Cria uma borda superior invisível de 1 pixel (pode ser utilizada para manter o layout). */
+    opacity: 1; /* Define a opacidade como 1, ou seja, totalmente opaco. */
+    display: flex; /* Utiliza flexbox para organizar os elementos internos. */
+    justify-content: center; /* Centraliza os itens horizontalmente no footer. */
+    align-items: center; /* Alinha os itens verticalmente no centro do footer. */
+    gap: 0; /* Define um espaço entre os itens como 0 pixels. */
+    border-top: 1px solid #F1E6FD30; /* Define uma borda superior de 1 pixel com cor rgba (transparente). */
 
+    /* Media query para telas com largura máxima de 1410 pixels */
     @media (max-width: 1410px) {
-        width: 100%; /* Torna a largura 100% em telas menores */
-        padding: 16px; /* Ajusta o padding se necessário */
+        width: 100%; /* Altera a largura do footer para 100% da largura do contêiner pai. */
+        padding: 16px; /* Altera o preenchimento para 16 pixels em todos os lados. */
     }
 }
 
 .content {
-    color:#B5B2BC;
-    display: flex;
-    flex-direction: column; /* Ajusta a direção para coluna, se necessário */
-    align-items: center; /* Alinha o conteúdo no centro */
-    text-align: center; /* Centraliza o texto */
-    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    color: #B5B2BC; /* Define a cor do texto como um tom de cinza claro. */
+    display: flex; /* Utiliza flexbox para organizar os itens internos. */
+    flex-direction: column; /* Organiza os itens em uma coluna. */
+    align-items: center; /* Centraliza os itens horizontalmente. */
+    text-align: center; /* Alinha o texto ao centro. */
+    width: 100%; /* Define a largura como 100% do contêiner pai. */
 }

@@ -1,0 +1,37 @@
+.pagination {
+    display: flex; /* Usa flexbox para alinhar os botões em linha */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Espaço acima da seção de paginação */
+
+    .pagination-button {
+        background-color: #6b46c1; /* Cor de fundo padrão dos botões */
+        color: #ffffff; /* Cor do texto dos botões */
+        width: 64px; /* Largura fixa para os botões */
+        height: 44px; /* Altura fixa para os botões */
+        display: flex; /* Usa flexbox para centralizar o conteúdo dos botões */
+        align-items: center; /* Alinha verticalmente o conteúdo dos botões */
+        justify-content: center; /* Alinha horizontalmente o conteúdo dos botões */
+        margin: 0 4px; /* Espaço lateral entre os botões */
+        border-radius: 4px; /* Bordas arredondadas nos botões */
+        border: none; /* Remove a borda padrão */
+        cursor: pointer; /* Muda o cursor para indicar que é clicável */
+        font-size: 16px; /* Tamanho da fonte dos botões */
+        transition: background-color 0.2s, transform 0.2s; /* Animações suaves para mudança de cor e transformação */
+
+        &:hover {
+            background-color: #5a37a3; /* Cor de fundo ao passar o mouse sobre o botão */
+            transform: scale(1.1); /* Aumenta o tamanho do botão para 110% ao passar o mouse */
+        }
+
+        &.active {
+            background-color: #EBEAF814; /* Cor de fundo do botão ativo */
+            color: #EAE6FD6E; /* Cor do texto para o botão ativo */
+        }
+
+        &:disabled {
+            background-color: #EBEAF814; /* Cor de fundo para o botão desativado (ex: seta na primeira página) */
+            color: #EAE6FD6E; /* Cor do texto para manter contraste */
+            cursor: not-allowed; /* Muda o cursor para indicar que o botão não é clicável */
+        }
+    }
+}

@@ -5,16 +5,16 @@
 }
 
 .input-group { 
-    display: flex;
-    align-items: center;
-    background-color: #1A191B;
-    padding: 8px 16px 8px 8px;
-    gap: 8px;
+    display: flex; // Usando flexbox para alinhar os elementos internos
+    align-items: center; // Centraliza os itens verticalmente
+    background-color: #1A191B; // Cor de fundo do grupo de entrada
+    padding: 8px 16px 8px 8px; // Espaçamento interno
+    gap: 8px; // Espaço entre o ícone e o campo de entrada
     height: 56px; // Altura fixa
     width: 488px; // Largura padrão para desktop
     border: 1px solid transparent; /* Borda padrão transparente */
-    border-radius: 4px;
-    transition: border-color 0.3s; /* Transição suave para a borda */
+    border-radius: 4px; // Bordas arredondadas
+    transition: border-color 0.3s; /* Transição suave para a borda ao interagir */
 
     &:hover,
     &:focus-within { /* Altera o estilo quando o grupo é focado ou está com o mouse em cima */
@@ -22,25 +22,25 @@
     }
 
     .input-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-width: 32px;
-        min-height: 32px;
-        border-radius: 100%;
-        color: #fff;
-        cursor: pointer;
+        display: flex; // Usando flexbox para centralizar o ícone
+        align-items: center; // Alinha verticalmente o ícone
+        justify-content: center; // Alinha horizontalmente o ícone
+        min-width: 32px; // Largura mínima do ícone
+        min-height: 32px; // Altura mínima do ícone
+        border-radius: 100%; // Bordas completamente arredondadas
+        color: #fff; // Cor do ícone
+        cursor: pointer; // Cursor pointer ao passar o mouse sobre o ícone
     }
     
     .input-field {
-        width: 100%; // Largura total
-        border: none;
-        background-color: transparent;
-        color: #fff; // Adicionando cor ao texto para visibilidade
+        width: 100%; // Largura total para preencher o espaço disponível
+        border: none; // Remove a borda padrão
+        background-color: transparent; // Fundo transparente
+        color: #fff; // Cor do texto para visibilidade
     }
     
     .input-field:focus {
-        outline: none; // Remove o contorno padrão
+        outline: none; // Remove o contorno padrão do campo de entrada
     }   
 
     // Estilos para o placeholder
@@ -52,22 +52,22 @@
 
 // Classe para o botão de filtro
 .filter {
-    background-color: #B744F714; // Cor de fundo
-    backdrop-filter: blur(4px); // Efeito de desfoque
+    background-color: #B744F714; // Cor de fundo do botão
+    backdrop-filter: blur(4px); // Efeito de desfoque no fundo
     width: 56px; // Largura do botão
     height: 55px; // Altura do botão
-    border: none; // Remover borda padrão
-    border-radius: 4px; // Borda arredondada
+    border: none; // Remove a borda padrão
+    border-radius: 4px; // Bordas arredondadas
     display: flex; // Usando flexbox para centralizar o conteúdo
-    align-items: center; // Alinhando verticalmente
-    justify-content: center; // Alinhando horizontalmente
+    align-items: center; // Alinha verticalmente o conteúdo do botão
+    justify-content: center; // Alinha horizontalmente o conteúdo do botão
     cursor: pointer; // Cursor pointer ao passar o mouse
     transition: background-color 0.3s, transform 0.2s; // Transição suave para cor de fundo e efeito de transformação
 
     // Efeito de hover
     &:hover {
         background-color: rgba(183, 68, 79, 0.7); // Alterar a cor de fundo ao passar o mouse
-        transform: scale(1.05); // Efeito de leve aumento
+        transform: scale(1.05); // Efeito de leve aumento ao passar o mouse
     }
 
     // Efeito de focus
@@ -77,15 +77,15 @@
     }
 
     img {
-        width: 24px; // Ajuste o tamanho da imagem
-        height: 24px;
+        width: 24px; // Ajusta o tamanho da imagem
+        height: 24px; // Altura da imagem
     }
 }
 
 // Estilos para dispositivos menores
 @media (max-width: 600px) {
     .input-group {
-        width: 317px; // Largura para mobile
+        width: 317px; // Largura reduzida para mobile
         height: 56px; // Altura fixa para mobile
     }
 }

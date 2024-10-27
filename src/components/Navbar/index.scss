@@ -1,43 +1,37 @@
 .navbar {
-  background-color: #12111380; /* Define a navbar como transparente */
-  display: flex; /* Define o contêiner como um flex container */
-  align-items: center; /* Alinha itens verticalmente ao centro */
-  gap: 10px; /* Adiciona um espaço entre a imagem e o h1 */
-  padding: 12px 3px;
-  border-bottom: 1px solid #F1E6FD30; /* Adiciona uma borda inferior branca de 1px */
+  background-color: #12111380; // Define a cor de fundo da barra de navegação com um tom escuro e 50% de opacidade
+  display: flex; // Usa flexbox para organizar os itens dentro da barra
+  align-items: center; // Alinha verticalmente os itens ao centro
+  gap: 10px; // Espaço entre os itens da barra
+  padding: 12px 3px; // Espaçamento interno (padding) na barra: 12px em cima e embaixo, 3px nas laterais
+  border-bottom: 1px solid #F1E6FD30; // Borda inferior com um tom claro e 30% de opacidade
 
-  .light-mode { 
-    width: 64px;
-    height: 48px;
-    border: none; // Remover a borda
-    border-radius: 2px;
-    margin-left: auto; 
-    display: flex; // Permite centralizar a imagem
-    align-items: center; // Centraliza verticalmente
-    justify-content: center; // Centraliza horizontalmente
-    padding: 0; // Remove padding para centralizar melhor a imagem
-    background: rgba(183, 68, 79, 0.08); // Mantém a mesma cor mas com 8% de opacidade
-    backdrop-filter: blur(4px); // Efeito de desfoque
-    transition: background 0.3s; // Transição suave para a mudança de fundo
+  .light-mode { // Estilo para o botão de alternância de tema
+    width: 64px; // Largura do botão
+    height: 48px; // Altura do botão
+    border: none; // Sem borda
+    border-radius: 2px; // Bordas levemente arredondadas
+    margin-left: auto; // Empurra o botão para a extrema direita
+    display: flex; // Usa flexbox para centralizar o conteúdo do botão
+    align-items: center; // Alinha o conteúdo do botão verticalmente ao centro
+    justify-content: center; // Alinha o conteúdo do botão horizontalmente ao centro
+    padding: 0; // Sem padding
+    background: rgba(183, 68, 79, 0.08); // Fundo com um tom vermelho claro e 8% de opacidade
+    backdrop-filter: blur(4px); // Aplica um efeito de desfoque no fundo do botão
+    transition: background 0.3s; // Transição suave para a cor de fundo ao passar o mouse
 
     img {
-        width: 24px; // Ajusta o tamanho da imagem
-        height: 24px;
+        width: 24px; // Largura da imagem dentro do botão
+        height: 24px; // Altura da imagem dentro do botão
     }
 
-    // Efeito de hover, se desejar
-    &:hover {
-        background: rgba(183, 68, 79, 0.15); // Altera a opacidade ao passar o mouse
+    &:hover { // Efeito ao passar o mouse sobre o botão
+        background: rgba(183, 68, 79, 0.15); // Aumenta a opacidade do fundo ao passar o mouse
     }
-}
-
-
-
-
-    
-  .page-title {
-    color: #ffff;
-    font-size: 20px;
   }
-  
+
+  .page-title { // Estilo para o título da página
+    color: #ffff; // Cor do texto: branco
+    font-size: 20px; // Tamanho da fonte do título
+  }
 }

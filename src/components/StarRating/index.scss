@@ -1,9 +1,9 @@
 .movie-rate {
-    display: flex;
-    gap: 4px;
-    margin-top: 6px;
+    display: flex; // Utiliza o flexbox para alinhar os itens em linha
+    gap: 4px; // Define um espaço de 4px entre os itens
+    margin-top: 6px; // Adiciona uma margem superior de 6px
 
     svg {
-        color: #f3eb00;
+        color: #f3eb00; // Define a cor dos ícones SVG como amarelo
     }
 }

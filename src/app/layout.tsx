@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Head from 'next/head';
+import { link } from "fs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}

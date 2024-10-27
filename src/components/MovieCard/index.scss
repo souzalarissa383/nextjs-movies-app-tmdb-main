@@ -1,87 +1,82 @@
-
-
 .movie-card {
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    
+    border-radius: 8px; /* Arredonda os cantos do cartão com um raio de 8 pixels. */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do cartão. */
+    display: flex; /* Utiliza o modelo flexbox para organizar os elementos internos. */
+    flex-direction: column; /* Organiza os elementos internos em uma coluna. */
+    position: relative; /* Permite que os elementos filhos com posição absoluta sejam posicionados em relação a este contêiner. */
+    width: 100%; /* Define a largura do cartão como 100% do seu contêiner pai. */
+    height: 100%; /* Define a altura do cartão como 100% do seu contêiner pai. */
     
     .movie-poster img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 1;
-        transition: opacity .6s;
+        width: 100%; /* A imagem ocupa toda a largura do contêiner pai. */
+        height: 100%; /* A imagem ocupa toda a altura do contêiner pai. */
+        object-fit: cover; /* Mantém a proporção da imagem enquanto cobre todo o espaço disponível. */
+        opacity: 1; /* Define a opacidade da imagem como totalmente visível. */
+        transition: opacity .6s; /* Transição suave para a opacidade ao longo de 0,6 segundos. */
     }
 
     .movie-infos {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding: 10px;
-        position: absolute;
-        bottom: 0;
-        background: linear-gradient(#00000000, #000000 90%);
-        height: 200px;
-        width: 100%;
+        display: flex; /* Utiliza flexbox para organizar os elementos internos. */
+        flex-direction: column; /* Organiza os elementos internos em uma coluna. */
+        justify-content: flex-end; /* Alinha os elementos na parte inferior do contêiner. */
+        padding: 10px; /* Aplica um preenchimento de 10 pixels ao redor do conteúdo. */
+        position: absolute; /* Posiciona este contêiner de informações em relação ao cartão. */
+        bottom: 0; /* Coloca o contêiner de informações na parte inferior do cartão. */
+        background: linear-gradient(#00000000, #000000 90%); /* Cria um fundo em gradiente que vai de transparente a preto (90%). */
+        height: 200px; /* Define a altura do contêiner de informações como 200 pixels. */
+        width: 100%; /* Define a largura do contêiner de informações como 100% do cartão. */
         
         .movie-title {
-            color: #EEEEEE;
-            font-size: 16px;
-            font-weight: 600;
-            line-height:17.07px;
-            text-align: left;
+            color: #EEEEEE; /* Define a cor do texto como um cinza muito claro. */
+            font-size: 16px; /* Define o tamanho da fonte como 16 pixels. */
+            font-weight: 600; /* Define o peso da fonte como semi-negrito. */
+            line-height: 17.07px; /* Define a altura da linha do texto. */
+            text-align: left; /* Alinha o texto à esquerda. */
         }
 
         .hidden-content {
-            height: 0px;
-            color: #EEEEEE;
-            font-size: 12px;
-            margin-top: 8px;
-            opacity: 0;
-            transition: all .6s;
+            height: 0px; /* Começa com uma altura de 0 pixels (escondido). */
+            color: #EEEEEE; /* Define a cor do texto como um cinza muito claro. */
+            font-size: 12px; /* Define o tamanho da fonte como 12 pixels. */
+            margin-top: 8px; /* Aplica uma margem superior de 8 pixels. */
+            opacity: 0; /* Começa invisível. */
+            transition: all .6s; /* Transição suave para todas as propriedades ao longo de 0,6 segundos. */
 
-            
             .btn-default {
-                background-color: #6046ff;
-                padding: 6px 8px;
-                border-radius: 4px;
-                margin-top: 10px;
-                color: #EEEEEE;
-                cursor: pointer;
-                width: 100%;
-                border: none;
+                background-color: #6046ff; /* Define a cor de fundo do botão como roxo. */
+                padding: 6px 8px; /* Aplica um preenchimento interno de 6 pixels verticalmente e 8 pixels horizontalmente. */
+                border-radius: 4px; /* Arredonda os cantos do botão com um raio de 4 pixels. */
+                margin-top: 10px; /* Aplica uma margem superior de 10 pixels. */
+                color: #EEEEEE; /* Define a cor do texto do botão como um cinza muito claro. */
+                cursor: pointer; /* Altera o cursor para indicar que o botão é clicável. */
+                width: 100%; /* Define a largura do botão como 100% do contêiner pai. */
+                border: none; /* Remove qualquer borda padrão do botão. */
             }
         }
     }
 
+    /* Efeito ao passar o mouse sobre o cartão */
     &:hover {
-        cursor: pointer;
+        cursor: pointer; /* Muda o cursor para indicar que o cartão é clicável. */
 
         .movie-poster img {
-            opacity: 0.5;
+            opacity: 0.5; /* Diminui a opacidade da imagem para 50% ao passar o mouse. */
         }
 
         .movie-infos {
-            height: 100%;
+            height: 100%; /* Aumenta a altura do contêiner de informações para ocupar todo o cartão ao passar o mouse. */
         }
 
         .hidden-content {
-            opacity: 1;
+            opacity: 1; /* Torna o conteúdo oculto visível ao passar o mouse. */
         }
 
         .movie-infos:has(.movie-description) .hidden-content {
-            height: 100px;
+            height: 100px; /* Define a altura do conteúdo oculto como 100 pixels se a descrição do filme estiver presente. */
         }
 
         .movie-infos:not(:has(.movie-description)) .hidden-content {
-            height: 50px;
+            height: 50px; /* Define a altura do conteúdo oculto como 50 pixels se não houver descrição do filme. */
         }
-
     }
 }
-
