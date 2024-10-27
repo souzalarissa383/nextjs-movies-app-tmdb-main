@@ -15,7 +15,6 @@ Um aplicativo web que permite aos usuários pesquisar e visualizar detalhes de f
 - Busca de filmes por título.
 - Exibição de uma lista paginada de filmes.
 - Exibição de detalhes dos filmes selecionados.
-- Troca de temas (claro e escuro).
 
 ## Instalação
 
