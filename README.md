@@ -25,10 +25,12 @@ Para instalar as dependências do projeto, siga os passos abaixo:
    git clone https://github.com/souzalarissa383/nextjs-movies-app-tmdb-main.git
 2. Navegue até o diretório do projeto:
    cd nextjs-movies-app-tmdb-main
-3.Instale as dependências usando npm ou yarn:
+   
+3. Instale as dependências usando npm ou yarn:
 - npm install
 - yarn install
-4.Executando o Projeto
+  
+4. Executando o Projeto
 - npm run dev
 - yarn dev
      
