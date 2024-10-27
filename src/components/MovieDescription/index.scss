@@ -1,0 +1,42 @@
+.movie-description-container {
+    width: 1448px;
+    height: 603px;
+    gap: 0px;
+    opacity: 0px;
+    
+
+    .movie-header {
+        display: flex;
+        margin-bottom: 20px;
+       // Width:354.51px;
+      //  Height:542px;
+
+        .movie-poster {
+            max-width: 200px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .movie-info {
+            flex: 1;
+
+            .movie-title {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .movie-overview {
+                font-size: 1rem;
+                color: #666;
+            }
+        }
+    }
+
+    .movie-details {
+        margin-bottom: 20px;
+
+        p {
+            margin: 5px 0;
+        }
+    }
+}

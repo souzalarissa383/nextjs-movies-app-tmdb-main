@@ -1,0 +1,35 @@
+.movie-container {
+    padding: 24px 3%;
+    
+    .sub-header {
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        margin-bottom: 24px;
+
+    }
+    
+    .movie-list {
+        border: 4px solid transparent; /* Borda transparente */
+        padding: 16px; /* Padding de 16px */
+        border-radius: 4px; 
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* 5 colunas por padrão */
+        gap: 16px;
+        list-style: none;
+        width: 100%;
+        background-color: rgba(235, 234, 248, 0.08); /* Fundo com 8% de opacidade */
+        backdrop-filter: blur(4px); /* Efeito de desfoque */
+    }
+    
+    @media (max-width: 768px) { /* Ajuste o tamanho conforme necessário */
+        .movie-list {
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+        }
+    }
+    
+
+    
+}

@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #12111380; /* Define a navbar como transparente */
+  display: flex; /* Define o contêiner como um flex container */
+  align-items: center; /* Alinha itens verticalmente ao centro */
+  gap: 10px; /* Adiciona um espaço entre a imagem e o h1 */
+  padding: 12px 3px;
+  border-bottom: 1px solid #F1E6FD30; /* Adiciona uma borda inferior branca de 1px */
+
+  .light-mode { 
+    width: 64px;
+    height: 48px;
+    border: none; // Remover a borda
+    border-radius: 2px;
+    margin-left: auto; 
+    display: flex; // Permite centralizar a imagem
+    align-items: center; // Centraliza verticalmente
+    justify-content: center; // Centraliza horizontalmente
+    padding: 0; // Remove padding para centralizar melhor a imagem
+    background: rgba(183, 68, 79, 0.08); // Mantém a mesma cor mas com 8% de opacidade
+    backdrop-filter: blur(4px); // Efeito de desfoque
+    transition: background 0.3s; // Transição suave para a mudança de fundo
+
+    img {
+        width: 24px; // Ajusta o tamanho da imagem
+        height: 24px;
+    }
+
+    // Efeito de hover, se desejar
+    &:hover {
+        background: rgba(183, 68, 79, 0.15); // Altera a opacidade ao passar o mouse
+    }
+}
+
+
+
+
+    
+  .page-title {
+    color: #ffff;
+    font-size: 20px;
+  }
+  
+}

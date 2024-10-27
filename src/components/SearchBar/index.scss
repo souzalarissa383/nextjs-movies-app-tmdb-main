@@ -1,0 +1,91 @@
+.search-container { 
+    display: flex; // Usando flexbox para alinhar os elementos
+    align-items: center; // Centraliza os itens verticalmente
+    gap: 8px; // Espaço entre os elementos
+}
+
+.input-group { 
+    display: flex;
+    align-items: center;
+    background-color: #1A191B;
+    padding: 8px 16px 8px 8px;
+    gap: 8px;
+    height: 56px; // Altura fixa
+    width: 488px; // Largura padrão para desktop
+    border: 1px solid transparent; /* Borda padrão transparente */
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Transição suave para a borda */
+
+    &:hover,
+    &:focus-within { /* Altera o estilo quando o grupo é focado ou está com o mouse em cima */
+        border-color: #8E4EC6; /* Borda com a cor ao passar o mouse ou focar */
+    }
+
+    .input-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 32px;
+        min-height: 32px;
+        border-radius: 100%;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .input-field {
+        width: 100%; // Largura total
+        border: none;
+        background-color: transparent;
+        color: #fff; // Adicionando cor ao texto para visibilidade
+    }
+    
+    .input-field:focus {
+        outline: none; // Remove o contorno padrão
+    }   
+
+    // Estilos para o placeholder
+    & .input-field::placeholder {
+        font-size: 16px; // Tamanho da fonte do placeholder
+        color: rgba(255, 255, 255, 0.5); // Cor do placeholder (ajuste conforme necessário)
+    } 
+}
+
+// Classe para o botão de filtro
+.filter {
+    background-color: #B744F714; // Cor de fundo
+    backdrop-filter: blur(4px); // Efeito de desfoque
+    width: 56px; // Largura do botão
+    height: 55px; // Altura do botão
+    border: none; // Remover borda padrão
+    border-radius: 4px; // Borda arredondada
+    display: flex; // Usando flexbox para centralizar o conteúdo
+    align-items: center; // Alinhando verticalmente
+    justify-content: center; // Alinhando horizontalmente
+    cursor: pointer; // Cursor pointer ao passar o mouse
+    transition: background-color 0.3s, transform 0.2s; // Transição suave para cor de fundo e efeito de transformação
+
+    // Efeito de hover
+    &:hover {
+        background-color: rgba(183, 68, 79, 0.7); // Alterar a cor de fundo ao passar o mouse
+        transform: scale(1.05); // Efeito de leve aumento
+    }
+
+    // Efeito de focus
+    &:focus {
+        outline: none; // Remove o contorno padrão
+        box-shadow: 0 0 0 2px rgba(142, 78, 198, 0.5); // Sombra ao focar
+    }
+
+    img {
+        width: 24px; // Ajuste o tamanho da imagem
+        height: 24px;
+    }
+}
+
+// Estilos para dispositivos menores
+@media (max-width: 600px) {
+    .input-group {
+        width: 317px; // Largura para mobile
+        height: 56px; // Altura fixa para mobile
+    }
+}

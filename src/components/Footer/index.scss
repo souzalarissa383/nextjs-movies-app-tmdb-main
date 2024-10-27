@@ -1,0 +1,26 @@
+.footer {
+    width: 1410px; /* Largura fixa */
+    height: 68px; /* Altura fixa */
+    padding: 24px 0 0 0; /* Padding */
+    border-top: 1px solid transparent; /* Borda superior */
+    opacity: 1; /* Opacidade 1 para ser visível */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo */
+    gap: 0; /* Espaçamento entre itens */
+    border-top: 1px solid #F1E6FD30; /* Borda superior com a cor especificada */
+
+    @media (max-width: 1410px) {
+        width: 100%; /* Torna a largura 100% em telas menores */
+        padding: 16px; /* Ajusta o padding se necessário */
+    }
+}
+
+.content {
+    color:#B5B2BC;
+    display: flex;
+    flex-direction: column; /* Ajusta a direção para coluna, se necessário */
+    align-items: center; /* Alinha o conteúdo no centro */
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+}
